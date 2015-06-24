@@ -1,0 +1,78 @@
+.adminform {
+    border: 1px solid black;
+    margin: 2rem auto;
+    width: 75%;
+    padding: 0rem 8rem;
+    text-align: center;
+    background-color: #336699;
+    border: 1px solid #336699;
+    box-shadow: inset 1px 1px 3px #ffffff, 1px 1px 3px #000000;
+    border-radius: 10px;
+}
+    
+.adminform fieldset {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #999999;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #000000, inset 1px 1px 3px #ffffff;
+}
+        
+.adminform fieldset legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3rem 0;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+            
+.adminform fieldset h4 {
+    font-size: 1rem;
+    float: left;
+    margin: .5rem 0;
+    clear: both;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+
+
+
+.adminform fieldset input[type="text"] {
+    float: left;
+    clear: both;
+    border: 1px solid black;
+    box-shadow: inset 1px 1px 1px black;
+    background: white;
+    color: black;
+    width: 25rem;
+}
+
+.adminform fieldset div.optbtn input[type="button"] {
+    float: left;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black, inset 1px 1px 1px white;
+    margin-left: 1rem;
+    padding: 5px 15px;
+}
+
+.adminform div.adminsave input[type="button"] {
+    margin: 1rem;
+    padding: 10px 30px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black, inset 1px 1px 1px white;
+}
+
+textarea.admin_input {
+    float: left;
+    clear: both;
+    border: 1px solid black;
+    box-shadow: inset 1px 1px 1px black;
+    color: black;
+    background: white;
+}
+
+
