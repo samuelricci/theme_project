@@ -1,0 +1,53 @@
+/*------------------------------------------------*/
+/*-------------[ Content-Abstract ]---------------*/
+/*------------------------------------------------*/
+
+.abstractcontainer {
+    width: 100%;
+}
+
+.contentabstract {
+    width: 65%;
+    height: 100%;
+    margin: 0 1%;
+    padding: 0;
+    border: 1px solid black;
+    background: rgb(186, 186, 186);
+    float: left;
+    display: block;
+}
+
+.abstractsidebar {
+    width: 31%;
+    margin: 0% 1%;
+    float: left;
+    display: block;
+    border: 1px solid black;
+}
+
+.header-abstract {
+    float: right;
+    width: 31%;
+    height: 300px;
+    right: 0;
+    border: 1px solid black;
+}
+
+.nav-abstract {
+    float: left;
+    width: 65%;
+    height: 75px;
+    left: 0;
+    border: 1px solid black;
+}
+
+.header-abstract,
+.nav-abstract {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    margin: 0 1%;
+    z-index: 200;
+    clear: both;
+    background: grey;
+}

@@ -17,6 +17,28 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="shortcut icon" href="<?php echo get_the_guid( get_option( 'favicon_img' )); ?>" />
 
+<?php   
+    if ( $layout === $layoutleft ) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layoutleft.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layoutright ) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layoutright.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layouttop ) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layouttop.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layoutmid) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layoutmid.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layoutcenter) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layoutcenter.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layoutabstract) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-abstract.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layouttiles) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layouttiles.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layoutlargeright) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layoutlargeright.css' ) ?>" type="text/css" media="screen" /> <?php
+    } elseif ( $layout === $layoutmanytiles) {
+        ?> <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/layouts/css/style-layoutmanytiles.css' ) ?>" type="text/css" media="screen" /> <?php
+    }
+?>
+    
 <?php wp_head(); ?>
 </head>
 

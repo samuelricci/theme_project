@@ -213,10 +213,20 @@ add_action( 'widgets_init', 'themebase_widgets_init' );
  */
 function themebase_scripts() {
 	wp_enqueue_style( 'themebase-style', get_stylesheet_uri() );
-
+    
+    wp_enqueue_style( 'style-layoutleft', get_template_directory_uri() . '/layouts/css/style-layoutleft.css' );
+    wp_enqueue_style( 'style-layoutright', get_template_directory_uri() . '/layouts/css/style-layoutright.css' );
+    wp_enqueue_style( 'style-layouttop', get_template_directory_uri() . '/layouts/css/style-layouttop.css' );
+    wp_enqueue_style( 'style-layoutmid', get_template_directory_uri() . '/layouts/css/style-layoutmid.css' );
+    wp_enqueue_style( 'style-layoutcenter', get_template_directory_uri() . '/layouts/css/style-layoutcenter.css' );
+    wp_enqueue_style( 'style-layoutabstract', get_template_directory_uri() . '/layouts/css/style-layoutabstract.css' );
+    wp_enqueue_style( 'style-layouttiles', get_template_directory_uri() . '/layouts/css/style-layouttiles.css' );
+    wp_enqueue_style( 'style-layoutlargeright', get_template_directory_uri() . '/layouts/css/style-layoutlargeright.css' );
+    wp_enqueue_style( 'style-layoutmanytiles', get_template_directory_uri() . '/layouts/css/style-layoutmanytiles.css' );
+    
 	wp_enqueue_script( 'themebase-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-
-	wp_enqueue_script( 'themebase-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	
+    wp_enqueue_script( 'themebase-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -415,3 +425,19 @@ add_action( 'wp_head', 'prefix_meta_tag' );
 function prefix_meta_tag() {
    echo '<meta name="description" content="' . get_option( 'meta_tag' ) . '" />';
 }
+
+
+/**
+ * Global variables for layouts.
+ */
+
+$layout = get_option( 'layout_main' );
+$layoutleft = 'Content-left';
+$layoutright = 'Content-right';
+$layouttop = 'Content-top';
+$layoutmid = 'Content-mid';
+$layoutcenter = 'Content-center';
+$layoutabstract = 'Content-abstract';
+$layouttiles = 'Content-tiles';
+$layoutlargeright = 'Content-largeright';
+$layoutmanytiles = 'Content-manytiles';

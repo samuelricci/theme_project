@@ -1,0 +1,54 @@
+/*------------------------------------------------*/
+/*-------------[ Content-Largeright ]-------------*/
+/*------------------------------------------------*/
+
+.headerlargeright {
+    width: 48%;
+    margin: 0 1%;
+    border: 1px solid black;
+    background: grey;
+    float: left;
+    display: block;
+}
+
+.navlargeright {
+    width: 48%;
+    margin: 0 1%;
+    border: 1px solid black;
+    background: grey;
+    float: left;
+    display: block;
+    clear: right;
+}
+
+.largerightcontainer {
+    width: 100%;
+}
+
+.largerightcontent {
+    width: 65%;
+    margin: 0 1%;
+    background: grey;
+    border: 1px solid black;
+    float: right;
+    display: block;
+}
+
+.largerightabout {
+    width: 31%;
+    margin: 0 1% 1%;
+    background: grey;
+    border: 1px solid black;
+    float: left;
+    display: block;
+}
+
+
+.largerightexcess {
+    width: 31%;
+    margin: 0 1%;
+    background: grey;
+    border: 1px solid black;
+    float: left;
+    display: block;
+}

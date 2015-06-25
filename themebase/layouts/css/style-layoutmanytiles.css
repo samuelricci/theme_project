@@ -1,0 +1,68 @@
+/*------------------------------------------------*/
+/*--------------[ Content-Manytiles ]-------------*/
+/*------------------------------------------------*/
+
+.manytilesheader {
+    width: 48%;
+    height: 200px;
+    margin: 0 1%;
+    background: grey;
+    border: 1px solid black;
+    float: left;
+    display: block;
+}
+
+.manytilessearch {
+    width: 31%;
+    height: 50px;
+    margin: 0 1%;
+    background: grey;
+    border: 1px solid black;
+    float: right;
+    display: block;
+}
+
+.manytilesnav {
+    width: 48%;
+    height: 75px;
+    margin: 0 1%;
+    margin-top: 75px;
+    background: grey;
+    border: 1px solid black;
+    float: left;
+    display: block;
+    clear: right;
+}
+
+.manytilescontainer {
+    width: ;
+    margin: ;
+}
+
+.manytile-post {
+  width: 31%;
+  background: grey;
+  border: 1px solid black;
+  margin: 1%;
+}
+
+.manytilesmain {
+    
+}
+
+.manytilesbottom {
+    width: 98%;
+    height: 300px;
+    margin: 0 1%;
+    background: grey;
+    border: 1px solid black;
+    float: left;
+    display: block;
+}
+
+.manytilesbottom #text-7,
+.manytilesbottom #recent-posts-7{
+  width: 30%;
+  display: inline-block;
+  float: left;
+}

@@ -1,0 +1,52 @@
+/*------------------------------------------------*/
+/*--------------[ Content-Center ]----------------*/
+/*------------------------------------------------*/
+
+.header-center {
+    width: 96%;
+    margin: 0 2%;
+}
+
+.header-leftside,
+.sidebarabout,
+.sidebarexcess{
+    background: grey;
+    border: 1px solid black;
+    width: 31.33%;
+    margin: 0 1%;
+    padding: 0; 
+    height: 300px;
+    float: left;
+    display: block;
+}
+
+.nav-center {
+    width: 98%;
+    margin: 1%;
+    clear: both;
+    background: grey;
+    height: 50px;
+    display: block;
+    float: left;
+    border: 1px solid black;
+}
+
+.content-center {
+    width: 80%;
+    margin: 0 10%;
+    background: grey;
+    border: 1px solid black;
+    padding: 0;
+    float: left;
+    display: block;
+}
+
+.content-bottom {
+    width: 98%;
+    margin: 1%;
+    height: auto;
+    background: grey;
+    display: block;
+    float: left;
+    border: 1px solid black;
+}
