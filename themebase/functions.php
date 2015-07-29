@@ -342,6 +342,7 @@ function admin_base_theme_options() {
                     <h4>Blog layout:</h4>
                     <br />
                     <select class="admin_layout" name="layout_main">
+                        <option selected value="<?php echo get_option( 'layout_main' ) ? get_option( 'layout_main' ) : ''; ?>"><?php echo get_option( 'layout_main' ) ?></option>
                         <option value="Content-left">Content-Left</option>
                         <option value="Content-right">Content-Right</option>
                         <option value="Content-top">Content-Top</option>
@@ -368,7 +369,7 @@ function admin_base_theme_options() {
 // register admin_base_theme stylesheet
 add_action( 'admin_enqueue_scripts', 'admin_base_theme_styles' );
 
-// function to call admin_base_theme stylsheet
+// call admin_base_theme stylsheet
 function admin_base_theme_styles() {
     if ( 'admin_base_theme' == $_GET[ 'page' ] ) {
         wp_enqueue_media();
