@@ -1,5 +1,5 @@
 /*------------------------------------------------*/
-/*-------------[ Custom Page Layouts ]------------*/
+/*---------------[ Content-right ]----------------*/
 /*------------------------------------------------*/
 
 body {
@@ -26,26 +26,10 @@ body {
     display: block;
 }
 
-.twothirdsmainleft {
-    width: 63%;
-    margin: 1% 2%;
-    float: left;
-    display: block;
-    border: 1px solid black;
-}
-
 .twothirdsmainright {
     width: 63%;
     margin: 1% 2%;
     float: right;
-    display: block;
-    border: 1px solid black;
-}
-
-.onehalfmain {
-    width: 48%;
-    margin: 1%;
-    float: left;
     display: block;
     border: 1px solid black;
 }
@@ -56,30 +40,6 @@ body {
     float: left;
     display: block;
     border: 1px solid black;
-}
-
-.onefourthsidebar {
-    width: 23%;
-    margin: 1%;
-    float: left;
-    display: block;
-    border: 1px solid black;
-}
-
-.fullmain {
-    width: 98%;
-    margin: 1%;
-    border: 1px solid black;
-    float: left;
-    display: block;
-}
-
-.bottomsidebar {
-    width: 98%;
-    margin: 1%;
-    border: 1px solid black;
-    float: left;
-    display: block;
 }
 
 .mainfooter {
@@ -104,4 +64,53 @@ body {
 .alignleft,
 .alignright {
     clear: both;
+}
+
+
+/*------------------------------------------------*/
+/*---------------[ Media Queries ]----------------*/
+/*------------------------------------------------*/
+
+@media (min-width: 980px) {
+}
+
+@media (max-width: 979px) {  
+}
+
+@media (min-width: 960px) and (max-width: 1050px) {
+}
+
+@media (min-width: 789px) and (max-width: 959px) {
+}
+
+@media (max-width: 959px) {
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+}
+
+@media (max-width: 789px) {
+    
+    .twothirdsmainright {
+        width: 96%;
+        margin: 1% 2%;
+        float: left;
+        display: block;
+        border: 1px solid black;
+    }
+    
+    .onethirdsidebar {
+        width: 96%;
+        margin: 1% 2%;
+        float: left;
+        display: block;
+        border: 1px solid black;
+    }
+     
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
 }

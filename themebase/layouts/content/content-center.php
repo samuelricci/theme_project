@@ -30,4 +30,4 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_template_part( 'sidebars/sidebar-contentbottom' ); ?>
-<?php //get_sidebar( 'contentbottom' ); ?>
+<?php get_template_part( 'sidebars/sidebar-bottom' ); ?>

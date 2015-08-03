@@ -9,10 +9,10 @@
 .contentabstract {
     width: 65%;
     height: 100%;
-    margin: 0 1%;
+    margin: 0 1% 5%; 
     padding: 0;
     border: 1px solid black;
-    background: rgb(186, 186, 186);
+    background: ;
     float: left;
     display: block;
 }
@@ -50,4 +50,73 @@
     z-index: 200;
     clear: both;
     background: grey;
+}
+
+/*------------------------------------------------*/
+/*---------------[ Media Queries ]----------------*/
+/*------------------------------------------------*/
+
+@media (min-width: 980px) {
+}
+
+@media (max-width: 979px) {
+}
+
+@media (max-width: 1050px) {
+    
+    .contentabstract {
+        margin: 0 1% 150px;
+    }
+    
+    .headernav {
+        border: 1px solid black;
+        width: 98%;
+        margin: 0 1%;
+        height: 150px;
+        float: left;
+        background: rgb(183, 183, 183);
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 200;
+        clear: both;
+    }
+    
+    .header-abstract,
+    .nav-abstract {
+        width: 48%;
+        height: 150px;
+        margin: 0 1%;
+        display: block;
+        float: left;
+        background: none;
+        border: none;
+    }
+}
+
+@media (max-width: 779px) {
+    
+    .contentabstract {
+        width: 98%;
+    }
+    
+    .abstractsidebar {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 959px) {
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+}
+
+@media (max-width: 789px) { 
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
 }

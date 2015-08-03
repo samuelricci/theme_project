@@ -343,15 +343,15 @@ function admin_base_theme_options() {
                     <br />
                     <select class="admin_layout" name="layout_main">
                         <option selected value="<?php echo get_option( 'layout_main' ) ? get_option( 'layout_main' ) : ''; ?>"><?php echo get_option( 'layout_main' ) ?></option>
-                        <option value="Content-left">Content-Left</option>
-                        <option value="Content-right">Content-Right</option>
-                        <option value="Content-top">Content-Top</option>
-                        <option value="Content-mid">Content-Mid</option>
-                        <option value="Content-center">Content-Center</option>
-                        <option value="Content-abstract">Content-Abstract</option>
-                        <option value="Content-tiles">Content-Tiles</option> 
-                        <option value="Content-largeright">Content-Largeright</option>
-                        <option value="Content-manytiles">Content-Manytiles</option>
+                        <option value="Content-left">Content-left</option>
+                        <option value="Content-right">Content-right</option>
+                        <option value="Content-top">Content-top</option>
+                        <option value="Content-mid">Content-mid</option>
+                        <option value="Content-center">Content-center</option>
+                        <option value="Content-abstract">Content-abstract</option>
+                        <!-- <option value="Content-tiles">Content-tiles</option> -->
+                        <option value="Content-largeright">Content-largeright</option>
+                        <option value="Content-manytiles">Content-manytiles</option>
                     </select>
                     <br />
             </fieldset>
@@ -427,10 +427,28 @@ function prefix_meta_tag() {
    echo '<meta name="description" content="' . get_option( 'meta_tag' ) . '" />';
 }
 
+/**
+ * Determines the post excerpt length for post page
+ **/
+function adam_excerpt_length( $length ) {
+    return 60;
+}
+
+add_filter( 'excerpt_length', 'adam_excerpt_length', 999 );
+
+/**
+ * Removes and replaces [...] with 'Read More' on post excerpts
+ **/
+function adam_excerpt_more( $more ) {
+    return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'themebase' ) . '</a>';
+}
+
+add_filter( 'excerpt_more', 'adam_excerpt_more' );
+
 
 /**
  * Global variables for layouts.
- */
+ **/
 
 $layout = get_option( 'layout_main' );
 $layoutleft = 'Content-left';

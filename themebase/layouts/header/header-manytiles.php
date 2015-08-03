@@ -17,6 +17,3 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'themebase' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-  
-	<div id="content" class="site-content manytilescontainer">
-        <h1 class="site-title"><?php echo get_option( 'title_tag' ); ?></h1>

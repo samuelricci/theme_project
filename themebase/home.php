@@ -11,8 +11,8 @@
         get_template_part( 'layouts/content/content-center' );
     } elseif ( $layout === $layoutabstract) {
         get_template_part( 'layouts/content/content-abstract' );
-    } elseif ( $layout === $layouttiles) {
-        get_template_part( 'layouts/content/content-tiles' );
+    //} elseif ( $layout === $layouttiles) {
+        //get_template_part( 'layouts/content/content-tiles' );
     } elseif ( $layout === $layoutlargeright) {
         get_template_part( 'layouts/content/content-largeright' );
     } elseif ( $layout === $layoutmanytiles) {

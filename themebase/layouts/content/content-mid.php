@@ -1,7 +1,7 @@
 <?php get_template_part( 'sidebars/sidebar-left' ); ?>
-<?php// get_sidebar( 'left' ); ?>
 
     <div id="primary" class="content-area onehalfmain">
+        <h1 class="site-title"><?php echo get_option( 'title_tag' ); ?></h1>
 		<main id="main" class="site-main" role="main">
             
             <?php if ( have_posts() ) : ?>
@@ -32,10 +32,5 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_template_part( 'sidebars/sidebar-left' ); ?>
 <?php get_template_part( 'sidebars/sidebar-right' ); ?>
 <?php get_template_part( 'sidebars/sidebar-midhid' ); ?>
-
-<?php// get_sidebar( 'left' ); ?>
-<?php// get_sidebar( 'right' ); ?>
-<?php// get_sidebar( 'midhid' ); ?>

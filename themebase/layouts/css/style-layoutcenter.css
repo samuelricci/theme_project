@@ -10,21 +10,25 @@
 .header-leftside,
 .sidebarabout,
 .sidebarexcess{
-    background: grey;
+    background: ;
     border: 1px solid black;
     width: 31.33%;
     margin: 0 1%;
     padding: 0; 
-    height: 300px;
+    height: 400px;
     float: left;
     display: block;
+}
+
+h1.widget-title {
+    margin: 0.1em 0;
 }
 
 .nav-center {
     width: 98%;
     margin: 1%;
     clear: both;
-    background: grey;
+    background: ;
     height: 50px;
     display: block;
     float: left;
@@ -34,7 +38,7 @@
 .content-center {
     width: 80%;
     margin: 0 10%;
-    background: grey;
+    background: ;
     border: 1px solid black;
     padding: 0;
     float: left;
@@ -45,8 +49,80 @@
     width: 98%;
     margin: 1%;
     height: auto;
-    background: grey;
+    background: ;
     display: block;
     float: left;
     border: 1px solid black;
+}
+
+#text-4 {
+    width: 96%;
+    margin: 0 2% 2%;
+}
+
+#search-4, #archives-2 {
+    width: 96%;
+    margin: 0 2%;
+    float: left;
+    display: block;
+}
+
+/*------------------------------------------------*/
+/*---------------[ Media Queries ]----------------*/
+/*------------------------------------------------*/
+
+@media (min-width: 980px) {
+}
+
+@media (max-width: 1079px) {
+    
+    .sidebarexcess {
+        display: none;
+    }
+    
+    .header-leftside,
+    .sidebarabout {
+        width: 48%;
+        margin: 0 1%;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1050px) {
+}
+
+@media (min-width: 789px) {
+    
+    .bottomsidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 959px) {
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+}
+
+@media (max-width: 789px) {
+    
+    .header-leftside {
+        width: 98%;
+        margin: 0 1%;
+    }
+    
+    .sidebarabout,
+    .content-bottom {
+        display: none;
+    }
+    
+    .content-center {
+        width: 98%;
+        margin: 0 1%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
 }

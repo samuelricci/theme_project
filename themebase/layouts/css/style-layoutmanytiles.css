@@ -6,7 +6,7 @@
     width: 48%;
     height: 200px;
     margin: 0 1%;
-    background: grey;
+    background: ;
     border: 1px solid black;
     float: left;
     display: block;
@@ -16,7 +16,7 @@
     width: 31%;
     height: 50px;
     margin: 0 1%;
-    background: grey;
+    background: ;
     border: 1px solid black;
     float: right;
     display: block;
@@ -27,7 +27,7 @@
     height: 75px;
     margin: 0 1%;
     margin-top: 75px;
-    background: grey;
+    background: ;
     border: 1px solid black;
     float: left;
     display: block;
@@ -40,10 +40,10 @@
 }
 
 .manytile-post {
-  width: 31%;
-  background: grey;
-  border: 1px solid black;
-  margin: 1%;
+    width: 31%;
+    background: ;
+    border: 1px solid black;
+    margin: 1%;
 }
 
 .manytilesmain {
@@ -54,7 +54,7 @@
     width: 98%;
     height: 300px;
     margin: 0 1%;
-    background: grey;
+    background: ;
     border: 1px solid black;
     float: left;
     display: block;
@@ -62,7 +62,81 @@
 
 .manytilesbottom #text-7,
 .manytilesbottom #recent-posts-7{
-  width: 30%;
-  display: inline-block;
-  float: left;
+    width: 46%;
+    margin: 0 2%;
+    display: inline-block;
+    float: left;
+}
+
+/*------------------------------------------------*/
+/*---------------[ Media Queries ]----------------*/
+/*------------------------------------------------*/
+
+@media (min-width: 980px) {
+}
+
+@media (max-width: 989px) {
+    
+    .manytile-post {
+        width: 46%;
+        margin: 0 2% 1%;
+        float: left;
+        display: inline-block;
+    }
+    
+    .manytilesbottom,
+    .manytilesbottom #text-7,
+    .manytilesbottom #recent-posts-7 {
+        height: auto;
+        width: 96%;
+        margin: 0 2% 1%;
+        float: left;
+        display: inline-block;
+    }
+    
+}
+
+@media (min-width: 960px) and (max-width: 1050px) {
+}
+
+@media (min-width: 789px) and (max-width: 959px) {
+}
+
+@media (max-width: 700px) {
+    
+    .manytilesheader,
+    .manytilessearch,
+    .manytilesnav {
+        width: 96%;
+        margin: 0 2% 1%;
+        float: left;
+        display: inline-block;
+    }
+    
+    .manytile-post {
+        width: 96%;
+        margin: 0 2% 2%;
+    }
+    
+    .manytilesbottom #text-7,
+    .manytilesbottom #recent-posts-7 {
+        height: auto;
+        width: 96%;
+        margin: 0 2% 1%;
+        float: left;
+        display: inline-block;
+    }
+    
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+}
+
+@media (max-width: 789px) {
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
 }

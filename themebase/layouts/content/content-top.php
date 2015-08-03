@@ -1,6 +1,7 @@
 
 
 <div id="primary" class="content-area fullmain">
+    <h1 class="site-title"><?php echo get_option( 'title_tag' ); ?></h1>
 		<main id="main" class="site-main" role="main">
             
             <?php if ( have_posts() ) : ?>
