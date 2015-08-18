@@ -5,6 +5,12 @@
  * @package themebase
  */
 
+
+/*
+This is a note to show off how GitHub works!!
+
+*/
+
 if ( ! function_exists( 'themebase_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
